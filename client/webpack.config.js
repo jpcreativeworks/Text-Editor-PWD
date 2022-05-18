@@ -23,6 +23,10 @@ module.exports = () => {
         template: './index.html',
         title:'Just Another Text Editor'
       }),
+      new InjectManifest({// the sw makes the app
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js'
+      }),
       new WebpackPwaManifest({
         fingerprints:false,
         inject:true,
