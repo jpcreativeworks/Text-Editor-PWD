@@ -34,7 +34,7 @@ registerRoute(
     plugins: [
       new CacheableResponsePlugin({
         statuses: [0, 200],
-      }),      
+      }),       
     ],
   })
 );
